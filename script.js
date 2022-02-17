@@ -8,6 +8,7 @@ function proveri(){
   xhttp.onload = function() {
       let json_podaci = this.responseText;
       let rezultat = JSON.parse(json_podaci);
+      console.log(rezultat);
       const greska = document.querySelector(".alert");
       if(rezultat.status === 'error' ){
         greska.style.display = "block";
